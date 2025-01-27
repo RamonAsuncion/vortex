@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +7,9 @@
 }
 
 body {
-  font-family: 'Spectral', serif;
-  background-color: #2c3e50;
-  color: #ecf0f1;
+  font-family: 'Cinzel', serif;
+  background-color: #3D5A48;
+  color: #F1E6D8;
   padding: 20px;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -16,14 +18,47 @@ body {
   max-width: calc(100% - 40px);
 }
 
+#castSpellButton {
+  /* https://copy-paste-css.com */
+  display: inline-block;
+  outline: 0;
+  appearance: none;
+  padding: 0px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgb(249, 251, 250);
+  border: 1px solid rgb(137, 151, 155);
+  box-shadow: rgb(6 22 33 / 30%) 0px 1px 2px;
+  color: #3D5A48;
+  font-size: 14px;
+  font-weight: 400;
+  height: 36px;
+}
+
 h1 {
-  font-size: 3rem;
-  color: #f39c12;
+  font-size: 2rem;
+  color: #F1E6D8;
   margin-bottom: 20px;
   text-align: center;
 }
 
 a {
-  color: #ecf0f1;
+  color: #F1E6D8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
+a:hover {
+  color: #B37B4F;
+}
+
+#list {
+  text-align: center;
+  font-size: 25px;
+}
+
+#quests {
+  display: inline-block;
+  text-align: left;
 }

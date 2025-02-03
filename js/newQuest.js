@@ -1,4 +1,7 @@
-const quests = ["Quest 1: Initiation into the Arcane Arts"];
+const quests = [
+  "Quest 1: Initiation into the Arcane Arts",
+  "Quest 2: Solar System Exploration",
+];
 
 function addQuest() {
   const ul = document.getElementById("quests");

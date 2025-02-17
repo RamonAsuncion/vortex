@@ -1,6 +1,8 @@
 const quests = [
   "Quest 1: Initiation into the Arcane Arts",
   "Quest 2: Solar System Exploration",
+  "None",
+  "Quest 4: The Enchanted Symphony of Motion",
 ];
 
 function addQuest() {

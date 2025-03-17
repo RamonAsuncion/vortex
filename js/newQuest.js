@@ -3,6 +3,8 @@ const quests = [
   "Quest 2: Solar System Exploration",
   "None",
   "Quest 4: The Enchanted Symphony of Motion",
+  "None",
+  "Quest 6: The Arcane Path of Rays",
 ];
 
 function addQuest() {

@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<!-- Comments in HTML -->
-<!-- 
+/* 
  * Copyright (c) 2025 SingChun LEE @ Bucknell University. CC BY-NC 4.0.
  * 
  * This code is provided mainly for educational purposes at Bucknell University.
@@ -21,23 +19,25 @@
  *  - No additional restrictions: You may not apply legal terms or technological 
  *                                measures that legally restrict others from doing
  *                                anything the license permits.
--->
-<html>
-  <head>
-    <title>Quest 6 Starter</title>
-    <!-- Note that some header tags don't need a close tag. They don't have content, called "void" tags. -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
-    />
-    <!-- Import CSS uisng the link tag -->
-    <link rel="stylesheet" type="text/css" href="../../css/assignment.css" />
-    <!-- Webpage icon -->
-    <link rel="icon" href="" type="image/x-icon" />
-    <!-- Include the web app script -->
-    <script type="module" src="quest6-starter-full.js"></script>
-  </head>
-  <body></body>
-</html>
+ */
+
+var<private> tint_symbol_2_1 : vec3u;
+
+@group(0) @binding(0) var tint_symbol : texture_storage_2d<rgba8unorm, write>;
+
+fn tint_symbol_1_inner(tint_symbol_2 : vec3u) {
+  textureStore(tint_symbol, bitcast<vec2i>(tint_symbol_2.xy), vec4f(0.0f, 0.21960784494876861572f, 0.39607843756675720215f, 1.0f));
+  return;
+}
+
+fn tint_symbol_1_1() {
+  let x_31 = tint_symbol_2_1;
+  tint_symbol_1_inner(x_31);
+  return;
+}
+
+@compute @workgroup_size(16i, 16i, 1i)
+fn computeMain(@builtin(global_invocation_id) tint_symbol_2_1_param : vec3u) {
+  tint_symbol_2_1 = tint_symbol_2_1_param;
+  tint_symbol_1_1();
+}

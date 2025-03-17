@@ -641,7 +641,7 @@ function _0x4136() {
     "remove",
     "Camera\x20Mode:\x0a",
     "updateCameraFocal",
-    "/shaders/optimized_tracenothing.wgsl",
+    "./optimized_tracenothing.wgsl",
     "GET",
     "top",
     "_wgHeight",
@@ -888,9 +888,7 @@ class RayTracingBoxObject extends RayTracingObject {
   }
   async ["createShaders"]() {
     const _0x20dd3b = _0x1c9c99;
-    let _0x3125a9 = await this["loadShader"](
-      "/shaders/optimized_tracebox.wgsl"
-    );
+    let _0x3125a9 = await this["loadShader"]("./optimized_tracebox.wgsl");
     (this["_shaderModule"] = this["_device"][_0x20dd3b(0x1f2)]({
       label: "\x20Shader\x20" + this[_0x20dd3b(0x217)](),
       code: _0x3125a9,

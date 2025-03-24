@@ -389,7 +389,7 @@ function _0x365e() {
     "clear",
     "createTranslator",
     "STORAGE",
-    "/assets/shapes/box.polygon",
+    "./box.polygon",
     "createGeometry",
     "dense",
     "requestAdapter",
@@ -423,7 +423,7 @@ function _0x365e() {
     "human",
     "616gJerQx",
     "createShaderModule",
-    "/assets/shapes/star.polygon",
+    "./star.polygon",
     "setRequestHeader",
     "createPoint",
     "font",
@@ -440,7 +440,7 @@ function _0x365e() {
     "float32x",
     "_polygon",
     "responseType",
-    "/assets/shapes/dense.polygon",
+    "./dense.polygon",
     "WebGPU\x20is\x20not\x20supported\x20in\x20this\x20browser.",
     "motorNorm",
     "status",
@@ -922,16 +922,14 @@ async function init() {
         _0x3a87b0 !== _0x377dd4(0x14c) &&
           ((_0x3a87b0 = _0x377dd4(0x14c)),
           _0x5af11e(_0x3a87b0),
-          (_0x4da8b3[_0x377dd4(0x1b0)][_0x377dd4(0x14a)] =
-            "/assets/shapes/circle.polygon"),
+          (_0x4da8b3[_0x377dd4(0x1b0)][_0x377dd4(0x14a)] = "./circle.polygon"),
           await _0x18ca27());
         break;
       case "h":
         _0x3a87b0 !== _0x377dd4(0x19e) &&
           ((_0x3a87b0 = _0x377dd4(0x19e)),
           _0x5af11e(_0x3a87b0),
-          (_0x4da8b3["_polygon"][_0x377dd4(0x14a)] =
-            "/assets/shapes/human.polygon"),
+          (_0x4da8b3["_polygon"][_0x377dd4(0x14a)] = "./human.polygon"),
           await _0x18ca27());
         break;
       case "s":

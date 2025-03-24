@@ -3,7 +3,7 @@ const quests = [
   "Quest 2: Solar System Exploration",
   "Quest 3: The Alchemist's Canvas",
   "Quest 4: The Enchanted Symphony of Motion",
-  "None",
+  "Quest 5: Shaping the Arcane Guardian",
   "Quest 6: The Arcane Path of Rays",
 ];
 
